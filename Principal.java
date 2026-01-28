@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class Principal {
     public static void main (String[] args){
-        System.out.println("hello world");
+        Scanner entrada= new Scanner(System.in);
+        System.out.println("escreva o seu nome:");
+        String nome = entrada.nextLine();
+        System.out.println("hello world " + nome + "!");
     }
 }
