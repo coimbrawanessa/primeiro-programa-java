@@ -1,23 +1,22 @@
 import java.util.Scanner;
 
 public class Principal {
+   //enunciado: escreva um programa que peça ao usuário o seu  nome e 3 notas com uma casa decimal,
+   // que devem ser inseridas individualmente e exiba a média aritimética delas.
+
     public static void main (String[] args){
         Scanner entrada= new Scanner(System.in);
-        System.out.println("escreva o seu nome:");
-        String nome = entrada.nextLine();
-        System.out.println("Qual seu dia de nascimento?");
-        int dia = entrada.nextInt();
-        System.out.println("Qual seu mês de nascimento?");
-        int mes = entrada.nextInt();
-        System.out.println("Qual seu ano de nascimento?");
-        int ano = entrada.nextInt();
-        System.out.println("Qual seu peso?");
-        double peso = entrada.nextDouble();
-        System.out.println("Qual sua altura?");
-        double altura = entrada.nextDouble();
-        System.out.println("hello world " + nome + "!");
-        System.out.println("Você nasceu dia " + dia + "/" + mes + "/" + ano );
-        System.out.println("seu peso é " + peso + " e sua altura é " + altura );
+        System.out.println(" Nota 1: ");
+        double nota1 = entrada.nextDouble();
+        System.out.println(" Nota 2: ");
+        double nota2 = entrada.nextDouble();
+        System.out.println(" Nota 3: ");
+        double nota3 = entrada.nextDouble();
+        double media = (nota1 + nota2 + nota3)/3;
+        System.out.println("a média das notas é: " + media);
+
+
+
 
     }
 }
